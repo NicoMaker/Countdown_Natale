@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById('timer').innerHTML = 'MERY CHRISTMAS AND HAPPY NEY YEAR';
+            document.getElementById('timer').innerHTML = 'MERY CHRISTMAS AND HAPPY NEW YEAR';
         }
     }, 1000);
 
