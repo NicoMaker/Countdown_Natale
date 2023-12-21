@@ -11,6 +11,10 @@ footer {
     padding: 10px;
 }
 
+main {
+    text-align: center;
+}
+
 header {
     background-color: #d9534f;
     color: #fff;
@@ -54,7 +58,7 @@ img {
         width: 200px;
     }
 
-    footer{
-        padding: 50px;
+    footer {
+        padding: 30px;
     }
 }
