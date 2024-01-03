@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let dataCorrente = new Date();
     let annoCorrente = dataCorrente.getFullYear();
 
+    if (dataCorrente.getMonth() == 11 && dataCorrente.getDate() >= 26)
+        annoCorrente++;
+
     let countDownDate = new Date(`Dec 25, ${annoCorrente} 00:00:00`).getTime();
     let x = setInterval(function () {
         let now = new Date().getTime();
@@ -16,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById('timer').innerHTML = 'MERY CHRISTMAS AND HAPPY NEW YEAR';
+            document.getElementById('timer').innerHTML = 'MERRY CHRISTMAS!!';
         }
     }, 1000);
 
     let anno = `
-<p>&copy; ${annoCorrente} Il Mio Sito di Natale</p>`
-document.getElementById("anno").innerHTML=anno;
+        <p>&copy; ${annoCorrente} Il Mio Sito di Natale</p>`;
+    document.getElementById("anno").innerHTML = anno;
 });
